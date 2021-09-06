@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+     <title>Jugar - Triqui Extremo</title>
+<!--
+
+DIGITAL TREND
+
+https://templatemo.com/tm-538-digital-trend
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="shortcut icon" href="/images/triqui.png" />
+     
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <link rel="stylesheet" href="css/main.css">     
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js" defer></script>
+     <script src="js/bootstrap.min.js" defer></script>
+     <script src="js/aos.js" defer></script>
+     <script src="js/owl.carousel.min.js" defer></script>
+     <script src="js/smoothscroll.js" defer></script>
+     <script src="js/custom.js" defer></script>
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+     <script src="js/main.js" defer></script>
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" style="color: #ffff; font-weight: bolder;"> 
+              <img src="/images/triqui.png" width= "75" height="70" style="border-radius: 5%;">
+               Triqui Extremo!
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">                    
+                    <li class="nav-item">
+                         <a href="" class="btn btn-danger"  data-toggle="modal" data-target="#exampleModalCenter" role="button">Regresar !</a>
+                     </li>
+                </ul>
+            </div>
+
+            <!--<div class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://img.icons8.com/emoji/28/000000/spain-emoji.png"/>
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="#">Action</a>
+                 <a class="dropdown-item" href="#">Another action</a>
+                 <div class="dropdown-divider"></div>
+                 <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </div>-->
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content">
+     <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Confirmación</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+     </div>
+     <div class="modal-body">
+          ¿Estás seguro de querer salir?
+     </div>
+     <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+          <a type="button" href="index.html" class="btn btn-success">Si</a>
+     </div>
+     </div>
+     </div>
+</div>
+
+
+     <!-- HERO -->
+     <section class="hero hero-bg">
+          <h1 class="game-notification"></h1>          
+          <div class="container-cells">                    
+               <div class="game-container">
+                 <div class="game-cell" id="0"></div>
+                 <div class="game-cell" id="1"></div>
+                 <div class="game-cell" id="2"></div>
+                 <div class="game-cell" id="3"></div>
+                 <div class="game-cell" id="4"></div>
+                 <div class="game-cell" id="5"></div>
+                 <div class="game-cell" id="6"></div>
+                 <div class="game-cell" id="7"></div>
+                 <div class="game-cell" id="8"></div>
+                 <div class="game-cell" id="9"></div>
+                 <div class="game-cell" id="10"></div>
+                 <div class="game-cell" id="11"></div>
+                 <div class="game-cell" id="12"></div>
+                 <div class="game-cell" id="13"></div>
+                 <div class="game-cell" id="14"></div>
+                 <div class="game-cell" id="15"></div>
+                 <div class="game-cell" id="16"></div>
+                 <div class="game-cell" id="17"></div>
+                 <div class="game-cell" id="18"></div>
+                 <div class="game-cell" id="19"></div>
+                 <div class="game-cell" id="20"></div>
+                 <div class="game-cell" id="21"></div>
+                 <div class="game-cell" id="22"></div>
+                 <div class="game-cell" id="23"></div>
+                 <div class="game-cell" id="24"></div>                 
+               </div>   
+               
+               
+               <div class="container-luck">
+                    <div class="row">
+                         <div class="luck-container">
+                              <button class="game-lucky-btn" id="btnLuckyButton">Lanza el dado</button>   
+                              <br><br><h2>El número de la suerte es:</h2>
+                              <h1 class="lucky-number"></h1>
+                         </div> 
+                    </div>
+                    <div class="row" style="margin-top: 20%;">
+                        <button class="game-restart" name="game-restart">Restablecer</button>              
+                    </div>
+               </div>          
+          </div>                                   
+     </section>
+
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Una nueva forma de <strong>divertirse</strong>.</h1>
+          </div>
+                    
+
+          <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">           
+          </div>
+
+          <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">  
+          </div>
+
+        </div>
+      </div>
+    </footer>     
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+  background-color: #41e7b5;
+}
+
+  .container-luck{
+    margin: auto;
+    width: 50%;    
+    padding: 10px;
+    margin-top: 10%;
+  }
+
+  .container-cells{
+    text-align: center;      
+    margin-bottom: 15%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+  }
+
+  .luck-container{
+    margin: 50px auto;
+    text-align: center; 
+       
+  }
+
+  .game-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 309px;
+    height: 309px;
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .game-cell {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+    background-color: #41e7b5;
+    text-align: center;
+  }
+
+  .game-notification{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 2%;    
+    text-align: center;
+  }
+
+  .game-restart{
+    background-color: rgb(185, 134, 233);
+    color: #ffff;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 9px #999;    
+    margin: auto;
+    width: 50%;    
+    padding: 10px;   
+  }
+
+  .game-lucky-btn{
+    background-color: rgb(94, 150, 49);
+    color: #ffff;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(112, 70, 70);    
+    margin: auto;
+    width: 50%;    
+    padding: 10px;   
+  }
+
+  .game-lucky-btn-disabled{
+    background-color: rgba(182, 136, 136, 0.938);
+    color: #ffff;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(112, 70, 70);    
+    margin: auto;
+    width: 50%;    
+    padding: 10px;
+    pointer-events: none;
+  }
+
+  .game-lucky-btn:hover {background-color: #3e8e41}
+
+  .game-lucky-btnt:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .game-restart:hover {background-color: #3e8e41}
+
+  .game-restart:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .disabledbutton {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+    background-color: #41e7b5;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0.5;
+}

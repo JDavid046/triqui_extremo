@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+     <title>Triqui Extremo</title>
+<!--
+
+DIGITAL TREND
+
+https://templatemo.com/tm-538-digital-trend
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="shortcut icon" href="/images/triqui.png" />
+     
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js" defer></script>
+     <script src="js/bootstrap.min.js" defer></script>
+     <script src="js/aos.js" defer></script>
+     <script src="js/owl.carousel.min.js" defer></script>
+     <script src="js/smoothscroll.js" defer></script>
+     <script src="js/custom.js" defer></script>
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="/images/triqui.png" width= "75" height="70" style="border-radius: 5%;">
+               Triqui Extremo!
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">Cómo Jugar</a>
+                    </li>                    
+                    <li class="nav-item">
+                         <a href="" type="button" class="nav-link active contact" data-toggle="modal" data-target="#exampleModalCenter">Jugar !</a>
+                     </li>
+                </ul>
+            </div>
+
+            <!--<div class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://img.icons8.com/emoji/28/000000/spain-emoji.png"/>
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="#">Action</a>
+                 <a class="dropdown-item" href="#">Another action</a>
+                 <div class="dropdown-divider"></div>
+                 <a class="dropdown-item" href="#">Something else here</a>
+               </div>
+            </div>-->
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+          <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLongTitle">Configuración Inicial</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+          </div>
+          <form action="game.html" method="GET">
+               <div class="modal-body">
+                    Elige la cantidad de jugadores:
+                    <br><br>
+                    <select class="custom-select" name="number_players" onchange="checkPlayers(this.value);">                                                  
+                         <option value="2">2</option>
+                         <option value="3">3</option>
+                         <option value="4">4</option>
+                       </select>
+                    <br><br>Jugadores:<br><br><p id="jugadores">X O</p>   
+               </div>               
+               <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Continuar</button>
+               </div>
+          </form>
+          </div>
+          </div>
+     </div>     
+
+     <!-- HERO -->
+     <section class="hero hero-bg d-flex justify-content-center align-items-center">
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                              <div class="hero-text">
+
+                                   <h1 class="text-white" data-aos="fade-up">Una forma diferente de jugar el clásico juego. </h1>
+
+                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+
+                            <img src="images/working-girl.png" class="img-fluid" alt="working girl">
+                          </div>
+                        </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section class="about section-padding pb-0" id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-7 mx-auto col-md-10 col-12">
+                         <div class="about-info">
+
+                              <h2 class="mb-4" data-aos="fade-up">La forma de jugar es <strong>divertidamente sencillo.</strong></h2>
+
+                              <p class="mb-0" data-aos="fade-up">Antes de realizar la jugada, se debe hacer un lanzamiento de un número aleatorio, dependiendo de este número se habilitan la fila y columna 
+                                   correspondiente al número obtenido, y es <strong>únicamente</strong> en esas casillas en los que se puede realizar el movimiento.
+                              <br><br>Depende de tu astucia el poder completar tu juego y evitar que los demás completen el de ellos. El jugador que logre colocar 4 de sus fichas en linea, <strong>ganará el juego.</strong> Para ello debes contar con tu inteligencia y con un poco de suerte 😜.</p>
+                         </div>
+
+                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+
+                          <img src="images/newsletter.png" class="img-fluid" alt="office">
+                        </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- PROJECT -->
+     <section class="project" id="project">
+          <div class="container-fluid">
+               <div class="row">
+
+                    <div class="col-lg-12 col-12">                     
+
+                         <div class="owl-carousel owl-theme" id="project-slide">
+                              <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                                   <img src="images/project/project-image01.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info"> 
+                                        <h3>
+                                             <a>
+                                                  <span>Lanza</span>                                                  
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image02.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">                                        
+                                        <h3>
+                                             <a>
+                                                  <span>Juega</span>                                                  
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>
+
+                              <div class="item project-wrapper" data-aos="fade-up">
+                                   <img src="images/project/project-image03.jpg" class="img-fluid" alt="project image" style="height: 450px;object-fit: scale-down;">
+
+                                   <div class="project-info">                                        
+                                        <h3>
+                                             <a>
+                                                  <span>Diviértete</span>                                                  
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div>                              
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>     
+
+     <section class="blog" style="margin-bottom: 3%;">
+          <div class="container">
+               <div class="row">                                        
+                    <div class="col-lg-5 ml-auto mt-5 pt-5 col-md-6 col-12">
+
+                      <img src="images/sdsd.jpg" data-aos="fade-up" data-aos-delay="100" class="img-fluid" alt="newsletter">
+                    </div>
+
+                    <div class="col-lg-5 mr-auto mt-5 pt-5 col-md-6 col-12 newsletter-form">
+                      
+
+                      <h2 style="text-align: center; margin-top: 16%;" data-aos="fade-up" data-aos-delay="300">Empieza a jugar ya!</h2>
+                      <button type="submit" data-aos="fade-up" data-aos-delay="500" class="btn w-100 mt-3" data-toggle="modal" data-target="#exampleModalCenter">Jugar</button>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Una nueva forma de <strong>divertirse</strong>.</h1>
+          </div>
+                    
+
+          <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">           
+          </div>
+
+          <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">  
+          </div>
+
+        </div>
+      </div>
+    </footer> 
+    
+    <script type="text/javascript">
+     function checkPlayers(val){                              
+          if(val == '2'){
+               document.getElementById("jugadores").innerText = "X O";
+          }
+          else if(val == '3'){
+               document.getElementById("jugadores").innerText = "O X ▲";
+          }
+          else if(val == '4'){
+               document.getElementById("jugadores").innerText = "O X ▲ ☯";
+          }   
+          else{
+               document.getElementById("jugadores").innerText = " ";
+          }                                          
+     }
+</script>
+</body>
+</html>
